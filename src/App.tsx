@@ -1,11 +1,11 @@
 import "@styles/index.css";
+import CalendarPage from "./pages/CalendarPage";
 
 function App() {
   return (
-    <>
-      <div>TESt</div>
-      <div className="App">App</div>
-    </>
+    <div className="container">
+      <CalendarPage />;
+    </div>
   );
 }
 
