@@ -1,0 +1,10 @@
+:root {
+  --grey-light: #eaeaea;
+  --grey-dark: #7b7b7b;
+  --color-primary: #0d6efd;
+  --color-primary-shade: #0b5ed7;
+  --secondary-color: #198754;
+
+  --icon-fill: var(--color-primary);
+  --icon-fill-active: var(--color-primary-shade);
+}
