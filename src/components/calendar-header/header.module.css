@@ -1,5 +1,6 @@
 .header {
   --width-screen: 100vw;
+  --icon-fill: #fff;
 
   position: fixed;
   top: 0;
@@ -7,15 +8,9 @@
   padding: 10px;
   width: 100%;
   max-height: 120px;
-  background-color: var(--primary-color);
+  background-color: var(--color-primary);
   box-shadow: 0 0 6px 3px var(--grey-dark);
   color: #fff;
-}
-
-@media (min-width: 992px) {
-  .header {
-    --width-screen: 991px;
-  }
 }
 
 .headerTitle {
@@ -29,5 +24,11 @@
 }
 
 .date {
-  font-size: calc(var(--width-screen) * 0.03);
+  font-size: calc(var(--width-screen) * 0.04);
+}
+
+@media (min-width: 992px) {
+  .header {
+    --width-screen: 991px;
+  }
 }

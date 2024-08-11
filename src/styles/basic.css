@@ -16,7 +16,7 @@ body {
 .svg__root {
   width: 100%;
   height: auto;
-  fill: var(--color-primary);
+  fill: var(--icon-fill);
   transition:
     fill 0.3s ease,
     stroke-width 0.3s ease;
@@ -24,7 +24,7 @@ body {
 
 .svg:active .svg__root,
 .svg__root:active {
-  fill: var(--color-primary-shade);
+  fill: var(--icon-fill-active);
 }
 
 .svg--turn .svg {

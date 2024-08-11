@@ -2,14 +2,15 @@ import { ReactElement } from "react";
 import buttonStyle from "./base.module.css";
 
 type ButtonBasePropsType = {
-  styles?: CSSModuleClasses;
+  additionalStyles?: CSSModuleClasses;
   onClick: () => void;
   ElementJSX?: ReactElement;
   text?: string | number;
   arialLabel?: string;
 };
 export default function ButtonBase(props: ButtonBasePropsType) {
-  const { styles = buttonStyle, onClick, ElementJSX, text, arialLabel } = props;
+  const { additionalStyles, onClick, ElementJSX, text, arialLabel } = props;
+  const styles = Object.assign({}, buttonStyle, additionalStyles);
 
   function renderButtonIcon() {
     if (ElementJSX) {
