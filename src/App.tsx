@@ -4,7 +4,7 @@ import CalendarPage from "./pages/CalendarPage";
 function App() {
   return (
     <div className="container">
-      <CalendarPage />;
+      <CalendarPage />
     </div>
   );
 }

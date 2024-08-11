@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { getStartAndEndWeekDays } from "@/utils/get-start-and-end-week-days";
 import { formatDate } from "@/utils/date-formatter";
 
+import weekStyles from "./week.module.css";
+
 export default function Week() {
   const { startDate, endDate } = getStartAndEndWeekDays();
 
@@ -28,10 +30,14 @@ export default function Week() {
   }, []);
 
   return (
-    <div>
+    <ul className={weekStyles.weekGreed}>
       {weekDateList.map((day) => (
-        <div key={day.getTime()}>{formatDate(day)}</div>
+        <li className={weekStyles.weekDay} key={day.getTime()}>
+          <div className={weekStyles.dayHeader}>
+            <h2 className={weekStyles.dayTitle}>{formatDate(day)}</h2>
+          </div>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }

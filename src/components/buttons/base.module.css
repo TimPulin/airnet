@@ -1,0 +1,11 @@
+.btn {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.icon {
+  display: inline-block;
+  width: 25px;
+}
